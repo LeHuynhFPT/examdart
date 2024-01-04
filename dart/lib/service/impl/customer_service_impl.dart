@@ -29,7 +29,7 @@ class CustomerServiceImpl implements CustomerService {
   Future<Customer> addCustomer(Customer customer) async {
     try {
       final response = await http.post(
-        Uri.parse("$baseURL/add"),
+        Uri.parse("$baseURL/save"),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode(customer.toJson()),
       );
