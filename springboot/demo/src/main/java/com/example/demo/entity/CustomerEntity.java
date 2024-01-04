@@ -12,10 +12,11 @@ public class CustomerEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-    private String name;
-    private int age;
+    private String fullname;
+    private Date birthday;
+    
     private String address;
-
+    private String phonenumber;
 
 
 }
